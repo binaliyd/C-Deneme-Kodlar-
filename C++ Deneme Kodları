@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int secim;
+double sayi1, sayi2;
+cout << "sayi1 giriniz : ";
+cin >> sayi1;
+cout << "Sayi2 giriniz : ";
+cin >> sayi2;
+cout << "Lutfen yapmak istediginiz islemi seciniz : " << endl;
+cout << "Toplama islemi icin 1 e basiniz " << endl;
+cout << "Cikartma islemi icin 2 e basiniz " << endl;
+cout << "Carpim islemi icin 3 e basiniz " << endl;
+cout << "Bolme islemi icin 4 e basiniz " << endl;
+cin >> secim;
+switch (secim)
+{
+case 1:
+cout << "Toplama islemi secildi" << endl;
+cout << "Sonuc : " << sayi1 + sayi2;
+break;
+case 2:
+cout << "Cikartma islemi secildi"<<endl;
+cout << "Sonuc : " << sayi1 - sayi2;
+break;
+case 3:
+cout << "Carpma islemi secildi" << endl;
+cout << "Sonuc : " << sayi1 * sayi2;
+break;
+case 4:
+cout << "Bolme islemi secildi" << endl;
+cout << "Sonuc : " << sayi1 / sayi2;
+break;
+default:
+cout << "Gecersiz islem secimi" << endl;
+}
+}
